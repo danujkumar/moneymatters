@@ -17,11 +17,11 @@ app.use(cors());
 readdirSync("./routes").map((route) =>
   app.use("/api/v1", require("./routes/" + route))
 );
-// const server = () => {
-//   db();
-//   app.listen(PORT, () => {
-//     console.log(`You are listening to port:${PORT}`);
-//   });
-// };
+const server = () => {
+  db();
+  // app.listen(PORT, () => {
+  //   console.log(`You are listening to port:${PORT}`);
+  // });
+};
 
-// server();
+server();
