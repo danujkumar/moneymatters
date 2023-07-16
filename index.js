@@ -24,4 +24,4 @@ readdirSync("./routes").map((route) =>
 //   });
 // };
 
-server();
+// server();
